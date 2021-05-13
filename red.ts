@@ -22,6 +22,7 @@ req.onreadystatechange = function()
         }
         else
         {
+            (document.getElementById("redirecting") as HTMLElement).innerText = "Thanks for visiting!";
             console.log("That was not accepted!");
             console.log("Response: " + req.status);
             console.log("Response body: " + req.responseText);

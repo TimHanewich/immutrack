@@ -18,6 +18,7 @@ req.onreadystatechange = function () {
             setTimeout(DoTheRedirect, 2000);
         }
         else {
+            document.getElementById("redirecting").innerText = "Thanks for visiting!";
             console.log("That was not accepted!");
             console.log("Response: " + req.status);
             console.log("Response body: " + req.responseText);
